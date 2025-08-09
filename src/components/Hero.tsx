@@ -14,7 +14,7 @@ const Hero = () => {
                     alt="Luxury Interior Design"
                     className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary-light/60 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-tor bg-(image:--gradient-hero) from-primary/80 via-primary-light/60 to-transparent opacity-60"></div>
             </div>
 
             {/* Floating Elements */}

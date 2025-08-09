@@ -16,8 +16,8 @@ const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <header className="fixed top-0 left-0 right-0 z-50 bg-background/40 backdrop-blur-lg border-b border-border w-screen">
-            <div className="container mx-auto md:w-screen px-4 md:px-0 py-4">
+        <header className="fixed top-0 left-0 right-0 z-50 bg-background/40 backdrop-blur-lg border-b border-border">
+            <div className="container mx-auto md:w-screen px-4 md:px-0 lg:px-4 py-4">
                 <div className="flex items-center justify-between">
                     {/* Logo */}
                     {/* <div className="w-8 h-8 bg-gradient-primary rounded-md"></div> */}
@@ -43,7 +43,11 @@ const Header = () => {
 
                     {/* CTA Button */}
                     <div className="hidden md:block">
-                        <Button variant="premium" size="lg">
+                        <Button
+                            variant="premium"
+                            size="lg"
+                            className="cursor-pointer shadow-medium"
+                        >
                             Get Consultation
                         </Button>
                     </div>

@@ -23,7 +23,7 @@ const buttonVariants = cva(
                     "bg-gradient-primary bg-(image:--gradient-primary) text-primary-foreground hover:shadow-glow transform hover:scale-105 font-medium",
                 elegant:
                     "bg-background text-foreground border-2 border-primary hover:bg-primary hover:text-primary-foreground shadow-soft hover:shadow-elegant transform hover:scale-[1.02]",
-                accent: "bg-accent text-accent-foreground hover:bg-accent/90 shadow-soft hover:shadow-medium font-medium",
+                accent: "bg-accent text-accent-foreground hover:bg-accent/80 shadow-soft hover:shadow-medium font-medium",
             },
             size: {
                 default: "h-10 px-4 py-2",
