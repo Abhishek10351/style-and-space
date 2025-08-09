@@ -20,9 +20,9 @@ const buttonVariants = cva(
                 ghost: "hover:bg-accent hover:text-accent-foreground",
                 link: "text-primary underline-offset-4 hover:underline",
                 premium:
-                    "bg-gradient-primary text-primary-foreground hover:shadow-glow transform hover:scale-105 font-medium",
+                    "bg-gradient-primary bg-(image:--gradient-primary) text-primary-foreground hover:shadow-glow transform hover:scale-105 font-medium",
                 elegant:
-                    "bg-background text-foreground border border-primary hover:bg-primary hover:text-primary-foreground shadow-soft hover:shadow-elegant transform hover:scale-[1.02]",
+                    "bg-background text-foreground border-2 border-primary hover:bg-primary hover:text-primary-foreground shadow-soft hover:shadow-elegant transform hover:scale-[1.02]",
                 accent: "bg-accent text-accent-foreground hover:bg-accent/90 shadow-soft hover:shadow-medium font-medium",
             },
             size: {
