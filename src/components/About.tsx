@@ -80,12 +80,12 @@ const About = () => {
                             </p>
                             <p>
                                 We believe that great design is not just about
-                                aesthetics—it's about creating functional,
+                                aesthetics—it&apos;s about creating functional,
                                 sustainable spaces that enhance the lives of
                                 those who inhabit them. Every project we
                                 undertake is approached with meticulous
                                 attention to detail and a deep understanding of
-                                our clients' unique needs.
+                                our clients&apos; unique needs.
                             </p>
                             <p>
                                 Our multidisciplinary team combines creativity
@@ -125,11 +125,11 @@ const About = () => {
                                 Our Design Philosophy
                             </h4>
                             <blockquote className="text-lg italic leading-relaxed mb-6">
-                                "We believe that exceptional design emerges from
+                                &quot;We believe that exceptional design emerges from
                                 the perfect harmony between functionality,
                                 aesthetics, and the unique story of each client.
                                 Every space should be a reflection of the dreams
-                                and aspirations of those who call it home."
+                                and aspirations of those who call it home.&quot;
                             </blockquote>
                             <div className="flex items-center space-x-4">
                                 <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center text-accent-foreground font-bold">
