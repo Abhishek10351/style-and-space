@@ -4,4 +4,5 @@ export { default as Services } from "./Services";
 export { default as About } from "./About";
 export { default as Testimonial } from "./Testimonial";
 export { default as Process } from "./Process";
+export { default as Faq } from "./Faq";
 export { default as Footer } from "./Footer";
