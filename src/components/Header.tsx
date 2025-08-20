@@ -16,10 +16,11 @@ const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <header className="fixed top-0 left-0 right-0 z-50 bg-background/40 backdrop-blur-lg border-b border-border">
+        <header className="fixed top-0 left-0 right-0 z-50 bg-background/0 backdrop-blur-lg border-b border-border">
             <div className="container mx-auto md:w-screen px-4 md:px-0 lg:px-4 py-4">
                 <div className="flex items-center justify-between">
                     {/* Logo */}
+                    
                     {/* <div className="w-8 h-8 bg-gradient-primary rounded-md"></div> */}
                     <div className="flex items-center space-x-2">
                         <div className="bg-purple-800 rounded-md w-8 aspect-square"></div>
@@ -78,7 +79,7 @@ const Header = () => {
                             <Button
                                 variant="premium"
                                 size="lg"
-                                className="mt-4"
+                                className="mt-4 cursor-pointer"
                             >
                                 Get Consultation
                             </Button>

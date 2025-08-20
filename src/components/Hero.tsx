@@ -10,11 +10,12 @@ const Hero = () => {
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <img
-                    src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    // src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    src="/images/hero-interior.jpg"
                     alt="Luxury Interior Design"
                     className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-tor bg-(image:--gradient-hero) from-primary/80 via-primary-light/60 to-transparent opacity-60"></div>
+                <div className="absolute inset-0 bg-gradient-to-r bg-(image:--gradient-hero) from-primary/80 via-primary-light/60 to-transparent opacity-60"></div>
             </div>
 
             {/* Floating Elements */}
@@ -31,7 +32,7 @@ const Hero = () => {
             {/* Content */}
             <div className="relative z-10 container mx-auto px-4 py-32">
                 <div className="max-w-3xl animate-fade-in">
-                    <h1 className="text-5xl md:text-6xl font-serif font-bold text-white mb-6 leading-18 text-center">
+                    <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-bold text-white mb-6 leading-12 sm:leading-18 text-center">
                         Transforming
                         <span className="block text-accent">Spaces</span>
                         Into Dreams
