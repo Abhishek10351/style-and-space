@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { Award, Users, Target, Heart } from "lucide-react";
 
 const values = [
@@ -125,8 +124,8 @@ const About = () => {
                                 Our Design Philosophy
                             </h4>
                             <blockquote className="text-lg italic leading-relaxed mb-6">
-                                &quot;We believe that exceptional design emerges from
-                                the perfect harmony between functionality,
+                                &quot;We believe that exceptional design emerges
+                                from the perfect harmony between functionality,
                                 aesthetics, and the unique story of each client.
                                 Every space should be a reflection of the dreams
                                 and aspirations of those who call it home.&quot;
@@ -171,44 +170,6 @@ const About = () => {
                                 </p>
                             </div>
                         ))}
-                    </div>
-                </div>
-
-                {/* Team Section */}
-                <div className="animate-fade-in">
-                    <h3 className="text-3xl font-serif font-bold text-center text-foreground mb-12">
-                        Meet Our Expert Team
-                    </h3>
-                    <div className="grid md:grid-cols-3 gap-8 mb-12">
-                        {team.map((member, index) => (
-                            <div
-                                key={index}
-                                className="text-center p-6 bg-card rounded-xl shadow-soft hover:shadow-medium transition-all duration-300 animate-slide-up"
-                                style={{ animationDelay: `${index * 0.1}s` }}
-                            >
-                                <div className="w-16 h-16 bg-(image:--gradient-primary) rounded-full flex items-center justify-center mx-auto mb-4 text-primary-foreground font-bold text-lg">
-                                    {member.name
-                                        .split(" ")
-                                        .map((n) => n[0])
-                                        .join("")}
-                                </div>
-                                <h4 className="text-lg font-semibold text-foreground mb-1">
-                                    {member.name}
-                                </h4>
-                                <p className="text-primary font-medium mb-2">
-                                    {member.role}
-                                </p>
-                                <p className="text-muted-foreground text-sm">
-                                    {member.specialty}
-                                </p>
-                            </div>
-                        ))}
-                    </div>
-
-                    <div className="text-center hidden">
-                        <Button variant="elegant" size="lg">
-                            Join Our Team
-                        </Button>
                     </div>
                 </div>
             </div>
