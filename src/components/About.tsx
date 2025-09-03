@@ -27,24 +27,6 @@ const values = [
     },
 ];
 
-const team = [
-    {
-        name: "Sarah Martinez",
-        role: "Lead Interior Designer",
-        specialty: "Residential Luxury",
-    },
-    {
-        name: "David Chen",
-        role: "Principal Architect",
-        specialty: "Commercial Spaces",
-    },
-    {
-        name: "Elena Rodriguez",
-        role: "Design Consultant",
-        specialty: "Educational Environments",
-    },
-];
-
 const About = () => {
     return (
         <section id="about" className="py-24 bg-(image:--gradient-secondary)">
