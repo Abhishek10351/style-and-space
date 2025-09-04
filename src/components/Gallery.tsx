@@ -127,7 +127,7 @@ const Gallery = () => {
     return (
         <div className="min-h-screen bg-gradient-to-br from-background via-secondary/30 to-background">
             {/* Enhanced Header */}
-            <div className="border-b bg-card/80 backdrop-blur-lg sticky top-0 z-30 shadow-soft">
+            <div className="border-b bg-card/80 backdrop-blur-lg sticky top-0 z-30 shadow-md">
                 <div className="container mx-auto px-6 py-4">
                     <div className="flex items-center justify-between">
                         <Link href="/">
@@ -161,8 +161,8 @@ const Gallery = () => {
                                     rounded-full px-6 py-2 transition-all duration-300 transform hover:scale-105
                                     ${
                                         filter === category.id
-                                            ? "bg-gradient-primary text-white shadow-glow"
-                                            : "hover:bg-primary/5 hover:border-primary/30"
+                                            ? "bg-(image:--gradient-primary) shadow-xl shadow-primary/30"
+                                            : "bg-primary/5 border-primary/30"
                                     }
                                 `}
                             >
@@ -187,7 +187,7 @@ const Gallery = () => {
                     {filteredProjects.map((project, index) => (
                         <Card
                             key={`${project.id}-${filter}`}
-                            className="group overflow-hidden cursor-pointer transition-all duration-500 transform hover:scale-[1.02] hover:shadow-elegant bg-gradient-to-br from-card to-card/80 backdrop-blur-sm border-border/50 hover:border-primary/30 animate-fade-in"
+                            className="group overflow-hidden cursor-pointer transition-all duration-500 transform hover:scale-[1.02] hover:shadow-2xl bg-gradient-to-br from-card to-card/80 backdrop-blur-sm border-border/50 hover:border-primary/30 animate-fade-in"
                             style={{ animationDelay: `${index * 100}ms` }}
                             onClick={() => openLightbox(project)}
                         >
@@ -195,13 +195,13 @@ const Gallery = () => {
                                 <img
                                     src={project.image}
                                     alt={project.title}
-                                    className="w-full h-64 object-cover transition-all duration-700 ease-elegant group-hover:scale-110 group-hover:brightness-110"
+                                    className="w-full h-64 object-cover transition-all duration-700 ease-out group-hover:scale-110 group-hover:brightness-110"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500" />
 
                                 {/* Floating Category Badge */}
                                 <div className="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
-                                    <span className="inline-block px-3 py-1 bg-white/90 backdrop-blur-sm text-foreground text-sm rounded-full capitalize font-medium shadow-soft">
+                                    <span className="inline-block px-3 py-1 bg-white/90 backdrop-blur-sm text-foreground text-sm rounded-full capitalize font-medium shadow-sm">
                                         {project.category}
                                     </span>
                                 </div>
@@ -288,7 +288,7 @@ const Gallery = () => {
             {/* Enhanced Lightbox Modal */}
             {lightboxImage && (
                 <div className="fixed inset-0 bg-black/90 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-fade-in">
-                    <div className="relative max-w-4xl w-full max-h-[90vh] bg-card rounded-2xl overflow-hidden shadow-elegant animate-scale-in">
+                    <div className="relative max-w-4xl w-full max-h-[90vh] bg-card rounded-2xl overflow-hidden shadow-2xl animate-scale-in">
                         {/* Close Button */}
                         <Button
                             variant="ghost"
@@ -370,7 +370,7 @@ const Gallery = () => {
 
                                 <div className="pt-6">
                                     <Link href={`/project/${lightboxImage.id}`}>
-                                        <Button className="w-full bg-gradient-primary hover:shadow-glow transition-all duration-300">
+                                        <Button className="w-full bg-gradient-primary hover:shadow-xl hover:shadow-primary/30 transition-all duration-300">
                                             View Full Project Details
                                         </Button>
                                     </Link>
