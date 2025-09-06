@@ -29,6 +29,11 @@ const socialLinks = [
         href: "https://wa.me/8638595545",
         label: "WhatsApp",
     },
+    {
+        icon: MapPin,
+        href: "https://maps.app.goo.gl/5sn41nKSAx5rNrun9?g_st=awb",
+        label: "Map",
+    },
 ];
 
 const contactInfo = [
@@ -40,7 +45,7 @@ const contactInfo = [
     {
         icon: MapPin,
         href: "https://maps.app.goo.gl/5sn41nKSAx5rNrun9?g_st=awb",
-        label: "Style & Space, 123 Design Avenue, Creative District, MC 12345",
+        label: "Rupkonwar Path, Jhanakpur, Saurabh Nagar, Bongaon, Guwahati, Assam 781028",
     },
 ];
 
