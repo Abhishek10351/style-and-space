@@ -32,10 +32,9 @@ const Hero = () => {
             {/* Content */}
             <div className="relative z-10 container mx-auto px-4 py-32">
                 <div className="max-w-3xl animate-fade-in">
-                    <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-bold text-white mb-6 leading-12 sm:leading-18 text-center">
-                        Transforming
-                        <span className="block text-accent">Spaces</span>
-                        Into Dreams
+                    <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-bold text-white mb-6 leading-12 sm:leading-18 text-center lg:px-30">
+                        Design that speaks your{" "}
+                        <span className="block text-accent">Style</span>
                     </h1>
 
                     <p
