@@ -138,10 +138,14 @@
     }
 
     body {
-        @apply bg-background text-foreground;
+        @apply bg-background text-foreground font-sans;
         /* Custom scrollbar styling */
         scrollbar-width: thin;
         scrollbar-color: hsl(var(--primary) / 0.3) hsl(var(--muted));
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-serif;
     }
 
     /* Webkit browsers scrollbar */

@@ -11,8 +11,8 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                serif: ["Playfair Display", "serif"],
-                sans: ["Inter", "sans-serif"],
+                serif: ["var(--font-playfair)", "Playfair Display", "serif"],
+                sans: ["var(--font-jakarta)", "var(--font-inter)", "Inter", "sans-serif"],
             },
             colors: {
                 border: "hsl(var(--border))",
