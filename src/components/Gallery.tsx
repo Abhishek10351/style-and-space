@@ -128,7 +128,7 @@ const Gallery = () => {
         <div className="min-h-screen bg-gradient-to-br from-background via-secondary/30 to-background">
             {/* Enhanced Header */}
             <div className="border-b bg-card/80 backdrop-blur-lg sticky top-0 z-30 shadow-md">
-                <div className="container mx-auto px-6 py-4">
+                <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4">
                     <div className="flex items-center justify-between">
                         <Link href="/">
                             <Button
@@ -143,11 +143,11 @@ const Gallery = () => {
                 </div>
             </div>
 
-            <div className="container mx-auto px-6 py-12">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 md:py-12">
                 {/* Enhanced Filter Section */}
-                <div className="mb-12">
+                <div className="mb-8 sm:mb-10 md:mb-12">
                     {/* Enhanced Filter Buttons */}
-                    <div className="flex flex-wrap gap-3 justify-center">
+                    <div className="flex flex-wrap gap-2 sm:gap-3 justify-center">
                         {categories.map((category) => (
                             <Button
                                 key={category.id}
@@ -158,11 +158,11 @@ const Gallery = () => {
                                 }
                                 onClick={() => handleFilterChange(category.id)}
                                 className={`
-                                    rounded-full px-6 py-2 transition-all duration-300 transform hover:scale-105
+                                    rounded-full px-4 sm:px-6 py-1.5 sm:py-2 text-sm sm:text-base transition-all duration-300 transform hover:scale-105
                                     ${
                                         filter === category.id
-                                            ? "bg-(image:--gradient-primary) shadow-xl shadow-primary/30"
-                                            : "bg-primary/5 border-primary/30"
+                                            ? "bg-(image:--gradient-primary) shadow-md"
+                                            : "bg-primary/5 border-primary/30 hover:border-primary/50"
                                     }
                                 `}
                             >
@@ -181,7 +181,7 @@ const Gallery = () => {
                                 ? "opacity-0 scale-95"
                                 : "opacity-100 scale-100"
                         }
-                        grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6
+                        grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6
                     `}
                 >
                     {filteredProjects.map((project, index) => (
@@ -195,7 +195,7 @@ const Gallery = () => {
                                 <img
                                     src={project.image}
                                     alt={project.title}
-                                    className="w-full h-64 object-cover transition-all duration-700 ease-out group-hover:scale-110 group-hover:brightness-110"
+                                    className="w-full h-48 sm:h-56 md:h-64 object-cover transition-all duration-700 ease-out group-hover:scale-110 group-hover:brightness-110"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500" />
 
@@ -207,8 +207,8 @@ const Gallery = () => {
                                 </div>
                             </div>
 
-                            <CardContent className="p-6 space-y-4">
-                                <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                            <CardContent className="p-4 sm:p-6 space-y-3 sm:space-y-4">
+                                <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
                                     <Calendar className="h-4 w-4" />
                                     {project.year}
                                     <span>•</span>
@@ -216,11 +216,11 @@ const Gallery = () => {
                                     {project.location}
                                 </div>
 
-                                <h3 className="text-xl font-serif font-semibold text-foreground group-hover:text-primary transition-colors duration-300">
+                                <h3 className="text-lg sm:text-xl font-serif font-semibold text-foreground group-hover:text-primary transition-colors duration-300">
                                     {project.title}
                                 </h3>
 
-                                <p className="text-muted-foreground leading-relaxed line-clamp-3">
+                                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed line-clamp-3">
                                     {project.description}
                                 </p>
 
@@ -287,8 +287,8 @@ const Gallery = () => {
 
             {/* Enhanced Lightbox Modal */}
             {lightboxImage && (
-                <div className="fixed inset-0 bg-black/90 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-fade-in">
-                    <div className="relative max-w-4xl w-full max-h-[90vh] bg-card rounded-2xl overflow-hidden shadow-2xl animate-scale-in">
+                <div className="fixed inset-0 bg-black/90 backdrop-blur-sm z-50 flex items-center justify-center p-2 sm:p-4 animate-fade-in">
+                    <div className="relative max-w-4xl w-full max-h-[95vh] sm:max-h-[90vh] bg-card rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl animate-scale-in">
                         {/* Close Button */}
                         <Button
                             variant="ghost"
@@ -299,9 +299,9 @@ const Gallery = () => {
                             <X className="h-4 w-4" />
                         </Button>
 
-                        <div className="grid md:grid-cols-2 h-full">
+                        <div className="flex flex-col md:grid md:grid-cols-2 h-full max-h-[95vh] sm:max-h-[90vh]">
                             {/* Image Section */}
-                            <div className="relative">
+                            <div className="relative h-48 sm:h-64 md:h-auto">
                                 <img
                                     src={lightboxImage.image}
                                     alt={lightboxImage.title}
@@ -310,7 +310,7 @@ const Gallery = () => {
                             </div>
 
                             {/* Details Section */}
-                            <div className="p-8 space-y-6 overflow-y-auto">
+                            <div className="p-4 sm:p-6 md:p-8 space-y-4 sm:space-y-6 overflow-y-auto flex-1">
                                 <div>
                                     <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
                                         <Calendar className="h-4 w-4" />
@@ -370,7 +370,7 @@ const Gallery = () => {
 
                                 <div className="pt-6">
                                     <Link href={`/project/${lightboxImage.id}`}>
-                                        <Button className="w-full bg-gradient-primary hover:shadow-xl hover:shadow-primary/30 transition-all duration-300">
+                                        <Button className="w-full bg-(image:--gradient-primary) text-primary-foreground shadow-md hover:shadow-lg transition-all duration-300">
                                             View Full Project Details
                                         </Button>
                                     </Link>

@@ -10,12 +10,11 @@ const Hero = () => {
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <img
-                    // src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     src="/images/hero-interior.jpg"
                     alt="Luxury Interior Design"
                     className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-r bg-(image:--gradient-hero) from-primary/80 via-primary-light/60 to-transparent opacity-60"></div>
+                <div className="absolute inset-0 bg-(image:--gradient-hero)"></div>
             </div>
 
             {/* Floating Elements */}
@@ -30,30 +29,29 @@ const Hero = () => {
             ></div>
 
             {/* Content */}
-            <div className="relative z-10 container mx-auto px-4 py-32">
-                <div className="max-w-3xl animate-fade-in">
-                    <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-bold text-white mb-6 leading-12 sm:leading-18 text-center lg:px-30">
-                        Design that speaks your{" "}
-                        <span className="block text-accent">Style</span>
+            <div className="relative z-10 container mx-auto px-6 py-32">
+                <div className="max-w-4xl mx-auto text-center animate-fade-in">
+                    <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-bold text-white mb-6 leading-tight">
+                        Design that speaks your
+                        <span className="block text-accent mt-2">Style</span>
                     </h1>
 
                     <p
-                        className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed animate-slide-up text-center"
-                        style={{ animationDelay: "0.3s" }}
+                        className="text-lg md:text-xl text-white/95 mb-10 leading-relaxed max-w-2xl mx-auto animate-slide-up"
+                        style={{ animationDelay: "0.2s" }}
                     >
-                        Premium interior design and architecture for residential
-                        homes and commercial institutions. Creating
-                        sophisticated spaces that inspire and elevate.
+                        Architecture, Interior and Construction. We don&apos;t
+                        just design interiors — we create environments that
+                        inspire.
                     </p>
 
                     <div
-                        className="flex flex-col sm:flex-row gap-4 animate-slide-up"
-                        style={{ animationDelay: "0.6s" }}
+                        className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up"
+                        style={{ animationDelay: "0.4s" }}
                     >
                         <Button
-                            variant="premium"
                             size="xl"
-                            className="group cursor-pointer"
+                            className="group bg-accent text-accent-foreground hover:bg-accent/90 hover:shadow-xl transition-all duration-300"
                         >
                             Start Your Project
                             <ArrowRight
@@ -65,7 +63,7 @@ const Hero = () => {
                         <Button
                             variant="elegant"
                             size="xl"
-                            className="group cursor-pointer"
+                            className="group bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 hover:border-white/50 transition-all duration-300 cursor-pointer"
                         >
                             <Play
                                 className="mr-2 group-hover:scale-110 transition-transform duration-300"
@@ -77,31 +75,31 @@ const Hero = () => {
 
                     {/* Stats */}
                     <div
-                        className="grid grid-cols-3 gap-8 mt-16 animate-fade-in"
-                        style={{ animationDelay: "0.9s" }}
+                        className="grid grid-cols-3 gap-6 md:gap-12 mt-16 max-w-3xl mx-auto animate-fade-in"
+                        style={{ animationDelay: "0.6s" }}
                     >
                         <div className="text-center">
                             <div className="text-3xl md:text-4xl font-bold text-accent mb-2">
                                 150+
                             </div>
-                            <div className="text-white/80 font-medium">
-                                Projects Completed
+                            <div className="text-white/90 text-sm md:text-base font-medium">
+                                Projects
                             </div>
                         </div>
                         <div className="text-center">
                             <div className="text-3xl md:text-4xl font-bold text-accent mb-2">
                                 12+
                             </div>
-                            <div className="text-white/80 font-medium">
-                                Years Experience
+                            <div className="text-white/90 text-sm md:text-base font-medium">
+                                Years
                             </div>
                         </div>
                         <div className="text-center">
                             <div className="text-3xl md:text-4xl font-bold text-accent mb-2">
                                 98%
                             </div>
-                            <div className="text-white/80 font-medium">
-                                Client Satisfaction
+                            <div className="text-white/90 text-sm md:text-base font-medium">
+                                Satisfaction
                             </div>
                         </div>
                     </div>

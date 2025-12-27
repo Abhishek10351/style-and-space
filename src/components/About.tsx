@@ -30,16 +30,17 @@ const values = [
 const About = () => {
     return (
         <section id="about" className="py-24 bg-(image:--gradient-secondary)">
-            <div className="container mx-auto px-4">
+            <div className="container mx-auto px-6">
                 {/* Section Header */}
                 <div className="text-center mb-16 animate-fade-in">
                     <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-6">
                         About <span className="">Style &#38; Space</span>
                     </h2>
                     <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                        With over 12 years of experience, we are passionate
-                        about creating extraordinary spaces that reflect your
-                        personality and enhance your lifestyle.
+                        Architecture, Interior and Construction. With over 12
+                        years of experience, we create environments that inspire
+                        — transforming your vision into functional, elegant
+                        spaces.
                     </p>
                 </div>
 
@@ -47,33 +48,36 @@ const About = () => {
                 <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
                     <div className="animate-slide-up">
                         <h3 className="text-3xl font-serif font-bold text-foreground mb-6">
-                            Crafting Spaces That Inspire
+                            Design. Build. Elevate.
                         </h3>
                         <div className="space-y-4 text-muted-foreground leading-relaxed text-justify">
                             <p>
-                                Founded in 2012, ArchVision Studio has
-                                established itself as a premier design firm
-                                specializing in both residential and commercial
-                                interior design. Our expertise extends from
-                                intimate home environments to inspiring
-                                educational institutions and small-scale
-                                commercial spaces.
+                                Founded in 2012, Style & Space has established
+                                itself as a premier firm specializing in luxury
+                                construction and bespoke interior design. We
+                                don&apos;t just construct spaces; we craft
+                                transformative experiences that elevate your
+                                lifestyle.
                             </p>
                             <p>
-                                We believe that great design is not just about
-                                aesthetics—it&apos;s about creating functional,
-                                sustainable spaces that enhance the lives of
-                                those who inhabit them. Every project we
-                                undertake is approached with meticulous
-                                attention to detail and a deep understanding of
-                                our clients&apos; unique needs.
+                                Our comprehensive approach seamlessly integrates
+                                architecture, interiors, engineering, and
+                                technology to create elegant, functional, and
+                                future-ready environments. From concept to
+                                completion, we provide full turnkey solutions
+                                including architectural planning, 3D
+                                visualization, smart home integration, project
+                                management, full construction, and interior
+                                styling.
                             </p>
                             <p>
-                                Our multidisciplinary team combines creativity
-                                with technical expertise, ensuring that every
-                                design decision is both beautiful and practical.
-                                From concept to completion, we guide our clients
-                                through a seamless design journey.
+                                With a steadfast commitment to quality and
+                                detail, we ensure every project reflects
+                                timeless design and lasting value. Whether
+                                it&apos;s a high-end residence, a cutting-edge
+                                office, or a premium retail space, we bring your
+                                vision to life with precision, creativity, and
+                                sophistication.
                             </p>
                         </div>
 
@@ -101,16 +105,17 @@ const About = () => {
                         className="animate-scale-in"
                         style={{ animationDelay: "0.3s" }}
                     >
-                        <div className="bg-(image:--gradient-primary) rounded-3xl p-8 text-primary-foreground shadow-elegant">
+                        <div className="bg-(image:--gradient-primary) rounded-3xl p-8 text-primary-foreground shadow-lg">
                             <h4 className="text-2xl font-serif font-bold mb-6">
-                                Our Design Philosophy
+                                Our Philosophy
                             </h4>
-                            <blockquote className="text-lg italic leading-relaxed mb-6">
-                                &quot;We believe that exceptional design emerges
-                                from the perfect harmony between functionality,
-                                aesthetics, and the unique story of each client.
-                                Every space should be a reflection of the dreams
-                                and aspirations of those who call it home.&quot;
+                            <blockquote className="text-lg italic leading-relaxed mb-6 text-primary-foreground/95">
+                                &quot;Design. Build. Elevate. We craft
+                                transformative experiences that elevate your
+                                lifestyle. From concept to completion, we
+                                empower you to bring your vision to life, both
+                                inside and out — creating environments that
+                                inspire and uplift.&quot;
                             </blockquote>
                             <div className="flex items-center space-x-4">
                                 <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center text-accent-foreground font-bold">
@@ -138,10 +143,10 @@ const About = () => {
                         {values.map((value, index) => (
                             <div
                                 key={index}
-                                className="text-center p-6 bg-card rounded-xl shadow-soft hover:shadow-medium transition-all duration-300 animate-scale-in group"
+                                className="text-center p-6 bg-card rounded-xl shadow-md hover:shadow-lg border border-border/50 hover:border-primary/30 transition-all duration-300 animate-scale-in group"
                                 style={{ animationDelay: `${index * 0.1}s` }}
                             >
-                                <div className="w-12 h-12 bg-(image:--gradient-primary) rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                                <div className="w-12 h-12 bg-(image:--gradient-primary) rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-sm">
                                     <value.icon className="w-6 h-6 text-primary-foreground" />
                                 </div>
                                 <h4 className="text-lg font-semibold text-foreground mb-2">

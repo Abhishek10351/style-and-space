@@ -68,23 +68,23 @@ const Footer = () => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="bg-primary text-primary-foreground rounded-b-md">
+        <footer className="bg-(image:--gradient-primary) text-primary-foreground">
             {/* Main Footer Content */}
-            <div className="container mx-auto px-4 py-12">
+            <div className="container mx-auto px-6 py-12">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
                     {/* Company Info */}
                     <div className="md:col-span-2 lg:col-span-2 pr-0 lg:pr-8">
-                        <div className="flex items-center space-x-2 mb-6">
-                            <div className="w-8 h-8 bg-accent rounded-md"></div>
-                            <span className="text-2xl font-serif font-semibold">
+                        <div className="flex items-center gap-2 mb-6">
+                            <div className="w-10 h-10 bg-accent rounded-lg shadow-lg"></div>
+                            <span className="text-2xl font-serif font-bold">
                                 Style &#38; Space
                             </span>
                         </div>
                         <p className="text-primary-foreground/80 leading-relaxed mb-6 max-w-lg">
-                            Transforming spaces into extraordinary environments
-                            through premium interior design and architecture.
-                            Creating beautiful, functional spaces for over 12
-                            years.
+                            Architecture, Interior and Construction. We
+                            don&apos;t just design interiors — we create
+                            environments that inspire. Let your space tell your
+                            story.
                         </p>
 
                         {/* Contact Info */}

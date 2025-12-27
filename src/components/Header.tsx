@@ -16,26 +16,24 @@ const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <header className="fixed top-0 left-0 right-0 z-50 bg-background/40 backdrop-blur-lg border-b border-border">
-            <div className="container mx-auto md:w-screen px-4 md:px-0 lg:px-4 py-4">
+        <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border/50 shadow-sm">
+            <div className="container mx-auto px-6 lg:px-8 py-4">
                 <div className="flex items-center justify-between">
                     {/* Logo */}
-                    
-                    {/* <div className="w-8 h-8 bg-gradient-primary rounded-md"></div> */}
-                    <div className="flex items-center space-x-2">
-                        <div className="bg-purple-800 rounded-md w-8 aspect-square"></div>
-                        <span className="text-xl font-serif font-semibold text-foreground">
+                    <Link href="/" className="flex items-center gap-2 group">
+                        <div className="w-10 h-10 bg-(image:--gradient-primary) rounded-lg shadow-sm group-hover:shadow-md transition-shadow duration-300"></div>
+                        <span className="text-xl font-serif font-bold text-foreground group-hover:text-primary transition-colors duration-300">
                             Style &#38; Space
                         </span>
-                    </div>
+                    </Link>
 
                     {/* Desktop Navigation */}
-                    <nav className="hidden md:flex items-center space-x-8">
+                    <nav className="hidden md:flex items-center gap-8">
                         {links.map((link) => (
                             <Link
                                 key={link.href}
                                 href={link.href}
-                                className="text-foreground hover:text-primary transition-colors duration-300 font-semibold"
+                                className="text-md font-medium text-muted-foreground hover:text-primary transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all hover:after:w-full"
                             >
                                 {link.label}
                             </Link>
@@ -44,11 +42,7 @@ const Header = () => {
 
                     {/* CTA Button */}
                     <div className="hidden md:block">
-                        <Button
-                            variant="premium"
-                            size="lg"
-                            className="cursor-pointer shadow-medium"
-                        >
+                        <Button variant="premium" size="lg">
                             Get Consultation
                         </Button>
                     </div>
@@ -64,13 +58,14 @@ const Header = () => {
 
                 {/* Mobile Navigation */}
                 {isMenuOpen && (
-                    <nav className="md:hidden mt-4 py-4 border-t border-border animate-fade-in">
-                        <div className="flex flex-col space-y-4">
+                    <nav className="md:hidden mt-4 py-4 border-t border-border/50 animate-slide-up">
+                        <div className="flex flex-col gap-2">
                             {links.map((link) => (
                                 <Link
                                     key={link.href}
                                     href={link.href}
-                                    className="text-foreground hover:text-primary transition-colors duration-300 font-medium py-2"
+                                    onClick={() => setIsMenuOpen(false)}
+                                    className="text-foreground hover:text-primary hover:bg-primary/5 transition-colors duration-300 font-medium py-3 px-4 rounded-lg"
                                 >
                                     {link.label}
                                 </Link>
@@ -79,7 +74,7 @@ const Header = () => {
                             <Button
                                 variant="premium"
                                 size="lg"
-                                className="mt-4 cursor-pointer"
+                                className="mt-4"
                             >
                                 Get Consultation
                             </Button>

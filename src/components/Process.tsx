@@ -33,8 +33,8 @@ const steps = [
 
 const Process = () => {
     return (
-        <section className="py-24 bg-background">
-            <div className="container mx-auto px-4">
+        <section className="py-24 bg-gradient-to-b from-background to-secondary/20">
+            <div className="container mx-auto px-6">
                 <div className="text-center mb-16 animate-fade-in">
                     <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-6">
                         Our Design Process
@@ -54,9 +54,9 @@ const Process = () => {
                             style={{ animationDelay: `${index * 0.2}s` }}
                         >
                             <div className="mb-8">
-                                <div className="relative w-20 h-20 bg-(image:--gradient-primary) rounded-full flex items-center justify-center mx-auto shadow-elegant mb-6">
+                                <div className="relative w-20 h-20 bg-(image:--gradient-primary) rounded-full flex items-center justify-center mx-auto shadow-md mb-6">
                                     <step.icon className="w-8 h-8 text-primary-foreground" />
-                                    <div className="absolute -top-2 -right-2 w-8 h-8 bg-accent rounded-full flex items-center justify-center text-accent-foreground font-bold text-sm">
+                                    <div className="absolute -top-2 -right-2 w-8 h-8 bg-accent rounded-full flex items-center justify-center text-accent-foreground font-bold text-sm shadow-md">
                                         {index + 1}
                                     </div>
                                 </div>
